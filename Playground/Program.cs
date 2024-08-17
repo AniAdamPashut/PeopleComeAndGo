@@ -11,7 +11,7 @@ var matchers = new List<IMatcher>()
 };
 
 var tokenizer = new Lexer(matchers);
-var tokens = tokenizer.Tokenize("if \tifa moshe Moshe8 AniAdamPashut");
+var tokens = tokenizer.Tokenize("if\tifa moshe Moshe8 AniAdamPashut");
 
 foreach (var token in tokens)
 {

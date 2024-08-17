@@ -5,10 +5,6 @@ namespace Tokenizer;
 public class Lexer(IEnumerable<IMatcher> Matchers)
 {
     public int ErrorRange { get; init; } = 10;
-    public IList<Token> GetTokens(string content)
-    {
-        return Tokenize(content).ToList();
-    }
 
     public IEnumerable<Token> Tokenize(string content)
     {
