@@ -1,6 +1,6 @@
 {
-    "match-extensions": {
-        "dlls": [],
-        "keywords": []
+    "tokenizer-extensions": {
+        "dlls": [ "C:\\Users\\mineb\\Desktop\\code\\PeopleComeAndGo\\TokenizerTestOperatorMatches\\bin\\Debug\\net8.0\\TokenizerTestOperatorMatches.dll" ],
+        "keywords": [ "if", "for", "while", "do", "return", "else", "auto" ]
     }
 }

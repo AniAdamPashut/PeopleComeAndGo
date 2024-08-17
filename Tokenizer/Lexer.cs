@@ -1,6 +1,6 @@
 ﻿using Common.Tokenization;
 
-namespace Tokenizer.Core;
+namespace Tokenizer;
 
 public class Lexer(IEnumerable<IMatcher> Matchers)
 {
