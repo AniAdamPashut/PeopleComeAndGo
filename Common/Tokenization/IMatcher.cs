@@ -1,6 +1,6 @@
-namespace Common;
+namespace Common.Tokenization;
 
 public interface IMatcher
 {
-    int Match(string )
+    Token? Match(string toMatch);
 }

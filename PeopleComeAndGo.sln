@@ -1,6 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common", "Common\Common.csproj", "{8142DB19-3B2F-4293-9D32-71F2545A3021}"
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.35027.167
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Common", "Common\Common.csproj", "{8142DB19-3B2F-4293-9D32-71F2545A3021}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tokenizer", "Tokenizer\Tokenizer.csproj", "{B99D8949-AD18-43D2-B413-8979796C4A20}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Playground", "Playground\Playground.csproj", "{2DDD3247-56F8-43B2-8A9A-9BC68F5A9C5A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -12,5 +19,19 @@ Global
 		{8142DB19-3B2F-4293-9D32-71F2545A3021}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8142DB19-3B2F-4293-9D32-71F2545A3021}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8142DB19-3B2F-4293-9D32-71F2545A3021}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B99D8949-AD18-43D2-B413-8979796C4A20}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B99D8949-AD18-43D2-B413-8979796C4A20}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B99D8949-AD18-43D2-B413-8979796C4A20}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B99D8949-AD18-43D2-B413-8979796C4A20}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2DDD3247-56F8-43B2-8A9A-9BC68F5A9C5A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2DDD3247-56F8-43B2-8A9A-9BC68F5A9C5A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2DDD3247-56F8-43B2-8A9A-9BC68F5A9C5A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2DDD3247-56F8-43B2-8A9A-9BC68F5A9C5A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {88484D50-A69B-4D49-A706-04653FDD0481}
 	EndGlobalSection
 EndGlobal
