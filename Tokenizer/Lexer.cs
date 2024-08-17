@@ -1,6 +1,6 @@
 ﻿using Common.Tokenization;
 
-namespace Tokenizer;
+namespace Tokenizer.Core;
 
 public class Lexer(IEnumerable<IMatcher> Matchers)
 {
@@ -19,7 +19,7 @@ public class Lexer(IEnumerable<IMatcher> Matchers)
                 .FirstOrDefault()
                 ?? throw new LexerError($"Lexer could not parse the following near \"{
                     content[index..(index + ErrorRange < content.Length ? index + ErrorRange : content.Length)]
-                    }\" @ {index}");
+                    }\" @ [{index}]");
 
             yield return current;
             index += current.Length;

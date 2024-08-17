@@ -5,7 +5,6 @@ using Tokenizer.Matchers;
 
 var matchers = new List<IMatcher>()
 {
-    new IfMatcher(),
     new WhitespaceMatcher(),
     new NameMatcher(),
 };
