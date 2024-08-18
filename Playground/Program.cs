@@ -1,6 +1,5 @@
-﻿using Common.Tokenization;
-
-using Tokenizer;
+﻿using Tokenizer;
+using Tokenizer.Core;
 using Tokenizer.Matchers;
 
 using Playground.Configuration;
@@ -10,16 +9,18 @@ using System.Reflection;
 var matchers = new List<IMatcher>()
 {
     new WhitespaceMatcher(),
-    new NameMatcher(),
 };
 
 using var stream = new FileStream("./config.json", FileMode.Open, FileAccess.Read);
 var config = JsonSerializer.Deserialize<Config>(stream);
 
-var keywordCreator = new MatcherFactory(TokenType.Keyword);
-foreach (var matcher in keywordCreator.CreateValues(config?.TokenizerExtensions.Keywords ?? []))
+foreach (var tokenExtensions in config?.TokenizerExtensions.Tokens ?? [])
 {
-    matchers.Add(matcher);
+    var creator = new MatcherFactory(Enum.Parse<TokenType>(tokenExtensions.Type));
+    foreach (var matcher in creator.CreateValues(tokenExtensions.Lexemes))
+    {
+        matchers.Add(matcher);
+    }
 }
 
 var dlls = config?.TokenizerExtensions.DllExtensions ?? [];
@@ -36,9 +37,11 @@ foreach (var dllPath in dlls)
 }
 
 var tokenizer = new Lexer(matchers);
-var tokens = tokenizer.Tokenize("if\tifa moshe += for while AniAdamPashut");
+string content = "int main() {\n\tprintf(\"Hello, World!\");\n\treturn 0;\n}\n";
+Console.WriteLine(content);
+var tokens = tokenizer.Tokenize(content);
 
-foreach (var token in tokens)
+foreach (var token in tokens.Where(token => token.Type != TokenType.Whitespace))
 {
     Console.WriteLine(token);
 }

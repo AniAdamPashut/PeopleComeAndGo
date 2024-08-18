@@ -1,6 +1,6 @@
 ﻿using System.Text.RegularExpressions;
 
-using Common.Tokenization;
+using Tokenizer.Core;
 
 namespace Tokenizer.Matchers;
 

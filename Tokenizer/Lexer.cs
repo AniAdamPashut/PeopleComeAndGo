@@ -1,4 +1,4 @@
-﻿using Common.Tokenization;
+﻿using Tokenizer.Core;
 
 namespace Tokenizer;
 

@@ -1,6 +1,19 @@
 {
     "tokenizer-extensions": {
-        "dlls": [ "C:\\Users\\mineb\\Desktop\\code\\PeopleComeAndGo\\TokenizerTestOperatorMatches\\bin\\Debug\\net8.0\\TokenizerTestOperatorMatches.dll" ],
-        "keywords": [ "if", "for", "while", "do", "return", "else", "auto" ]
+        "dlls": [ "C:\\Users\\mineb\\Desktop\\code\\PeopleComeAndGo\\Tokenizer.Extras\\bin\\Debug\\net8.0\\Tokenizer.Extras.dll" ],
+        "literal-extensions": [
+            {
+                "lexemes": [ "if", "for", "while", "return", "else", "goto", "int", "float", "void" ],
+                "type": "Keyword"
+            },
+            {
+                "lexemes": [ "+", "-", "++", "--", "*", "/", "&", "=", "!=", "==" ],
+                "type": "Operator"
+            },
+            {
+                "lexemes": [ ")", "(", "[", "]", "}", "{", ";", "," ],
+                "type": "Separator"
+            }
+        ]
     }
 }

@@ -1,9 +1,9 @@
-﻿using Common.Tokenization;
-using System.Text.RegularExpressions;
+﻿using System.Text.RegularExpressions;
+
+using Tokenizer.Core;
 using Tokenizer.Matchers;
 
 namespace Tokenizer;
-
 
 public class MatcherFactory(TokenType Type)
 {

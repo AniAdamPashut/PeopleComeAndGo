@@ -1,4 +1,4 @@
-﻿namespace Common.Tokenization;
+﻿namespace Tokenizer.Core;
 
 // Do NOT change the order of this enum
 

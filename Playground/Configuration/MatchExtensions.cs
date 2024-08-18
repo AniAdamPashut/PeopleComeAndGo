@@ -8,6 +8,6 @@ public record MatchExtensions
     public string[] DllExtensions { get; init; }
     
     
-    [JsonPropertyName("keywords")]
-    public string[] Keywords { get; init; }
+    [JsonPropertyName("literal-extensions")]
+    public TokenExtensions[] Tokens { get; init; }
 }

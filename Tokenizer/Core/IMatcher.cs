@@ -1,4 +1,4 @@
-namespace Common.Tokenization;
+namespace Tokenizer.Core;
 
 public interface IMatcher
 {

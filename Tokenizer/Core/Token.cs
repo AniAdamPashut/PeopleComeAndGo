@@ -1,4 +1,4 @@
-namespace Common.Tokenization;
+namespace Tokenizer.Core;
 
 public record Token(string Lexeme, TokenType Type)
 {
